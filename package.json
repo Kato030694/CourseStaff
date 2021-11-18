@@ -1,5 +1,6 @@
 {
   "name": "begintablereactjs",
+  "homepage": "https://company.esmart.vn/esmartstaff/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,9 +13,14 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "bootstrap": "^5.1.3",
     "material-table": "^1.69.3",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.2",
+    "react-live-clock": "^5.3.1",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.3",
     "swiper": "^7.2.0",
