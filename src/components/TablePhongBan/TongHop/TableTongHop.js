@@ -9,6 +9,7 @@ import Paper from "@mui/material/Paper";
 import PropTypes from "prop-types";
 import TablePagination from "@mui/material/TablePagination";
 import Box from "@mui/material/Box";
+import TableSortLabel from "@mui/material/TableSortLabel";
 
 // IMG khóa học
 import * as Unicons from "@iconscout/react-unicons";
@@ -252,32 +253,6 @@ const rows = [
   ),
 ];
 
-function descendingComparator(a, b, odrderBy) {
-  if (b[odrderBy] < a[odrderBy]) {
-    return -1;
-  }
-  if (b[odrderBy] > a[odrderBy]) {
-    return 1;
-  }
-  return 0;
-}
-function getComparator(order, orderBy) {
-  return order === "desc"
-    ? (a, b) => descendingComparator(a, b, orderBy)
-    : (a, b) => -descendingComparator(a, b, orderBy);
-}
-
-function stableSort(array, comparator) {
-  const stabilizedThis = array.map((el, index) => [el, index]);
-  stabilizedThis.sort((a, b) => {
-    const order = comparator(a[0], b[0]);
-    if (order !== 0) {
-      return order;
-    }
-    return a[1] - b[1];
-  });
-  return stabilizedThis.map((el) => el[0]);
-}
 
 export default function TableTongHop() {
   return (
@@ -287,7 +262,11 @@ export default function TableTongHop() {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell sx={{ width: "5%" }}>STT</TableCell>
+              <TableCell sx={{ width: "5%" }} >
+                <TableSortLabel >
+                STT
+                </TableSortLabel>
+                </TableCell>
               <TableCell sx={{ width: "10%" }}>Avatar</TableCell>
               <TableCell align="left" sx={{ width: "20%" }}>
                 Họ và Tên
