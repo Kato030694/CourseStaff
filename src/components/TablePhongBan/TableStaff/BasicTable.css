@@ -25,3 +25,6 @@ img{
     text-align: center;
     color: rgb(247, 148, 29);
 }
+.edit__pagination p{
+    margin-top:15px;
+}

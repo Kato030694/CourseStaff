@@ -4,19 +4,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import ReactRouter from "./components/ReactRouter/ReactRouter";
 import NavbarTable from "./components/Navbar/NavbarTable";
 import Footer from "./components/Footers/Footer";
-import DemoSoft from "./components/DemoSoft/DemoSoft";
 import TableKeToan from "./components/TablePhongBan/KeToan/TableKeToan";
-import TableKinhDoanh from "./components/TablePhongBan/KinhDoanh/TableKinhDoanh";
+import TableTongHop from "./components/TablePhongBan/TongHop/TableTongHop";
+
 
 function App() {
   return (
     <div className="Container_root">
-      {/* <NavbarTable />
-      <Footer/> */}
-      <DemoSoft/>
-      <TableKeToan/>
-      <TableKinhDoanh/>
-    </div>
+      <NavbarTable />
+      <Footer/>
+     
+      </div>
   );
 }
 

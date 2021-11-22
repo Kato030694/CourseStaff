@@ -9,6 +9,15 @@ import Paper from "@mui/material/Paper";
 import PropTypes from "prop-types";
 import TablePagination from "@mui/material/TablePagination";
 import Box from "@mui/material/Box";
+import TableSortLabel from "@mui/material/TableSortLabel";
+import { visuallyHidden } from "@mui/utils";
+import TableFooter from '@mui/material/TableFooter';
+import IconButton from '@mui/material/IconButton';
+import FirstPageIcon from '@mui/icons-material/FirstPage';
+import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import LastPageIcon from '@mui/icons-material/LastPage';
+import { useTheme } from '@mui/material/styles';
 
 // IMG khóa học
 import * as Unicons from "@iconscout/react-unicons";
@@ -208,7 +217,11 @@ const rows = [
       title="Luyện Lý Trí"
     >
       <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,<a></a>,<a></a>,<a></a>,<a href="https://company.esmart.vn/profile/" target="_blank">
+    </a>,
+    <a></a>,
+    <a></a>,
+    <a></a>,
+    <a href="https://company.esmart.vn/profile/" target="_blank">
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
@@ -243,14 +256,136 @@ const rows = [
       title="Luyện Lý Trí"
     >
       <Unicons.UilBrain size="40" color="#f7941d" />
+    </a>,
+    <a></a>,
+    <a></a>,
+    <a></a>,
+    <a href="https://company.esmart.vn/profile/" target="_blank">
+      <Unicons.UilUser size="40" color="#f7941d" />
     </a>
-    ,<a></a>,
-    <a></a>,<a></a>,
+  ),
+  createData(
+    6,
+    <img
+      className="edit__image"
+      src="https://res.cloudinary.com/smarttax/image/upload/v1620802936/V%C4%83n_ph%C3%B2ng_ti%E1%BB%87n_nghi_th%C3%AAm_view_c%E1%BB%B1c_ch%E1%BA%A5t_zqjht6.png"
+    />,
+
+    "Đô My",
+    "Sales",
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Luyện Lý Trí"
+    >
+      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Luyện Lý Trí"
+    >
+      <Unicons.Uil3Plus size="40" color="#f7941d" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Luyện Lý Trí"
+    >
+      <Unicons.UilBrain size="40" color="#f7941d" />
+    </a>,
+    <a></a>,
+    <a></a>,
+    <a></a>,
+    <a href="https://company.esmart.vn/profile/" target="_blank">
+      <Unicons.UilUser size="40" color="#f7941d" />
+    </a>
+  ),
+  createData(
+    7,
+    <img
+      className="edit__image"
+      src="https://res.cloudinary.com/smarttax/image/upload/v1637055120/StaffeSmart/z2574681939751_091b3e274e1e61fa44fe6fe2711d9abd_fenapp.jpg"
+    />,
+
+    "Diệu Thúy",
+    "Kế Toán",
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Luyện Lý Trí"
+    >
+      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Luyện Lý Trí"
+    >
+      <Unicons.Uil3Plus size="40" color="#f7941d" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Luyện Lý Trí"
+    >
+      <Unicons.UilBrain size="40" color="#f7941d" />
+    </a>,
+    <a></a>,
+    <a></a>,
+    <a></a>,
+    <a href="https://company.esmart.vn/profile/" target="_blank">
+      <Unicons.UilUser size="40" color="#f7941d" />
+    </a>
+  ),
+  createData(
+    8,
+    <img
+      className="edit__image"
+      src="https://res.cloudinary.com/smarttax/image/upload/v1632707806/AlbumeSmart/hr_myb3zv.jpg"
+    />,
+    "Hà Trang",
+    "Sales",
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Luyện Lý Trí"
+    >
+      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Luyện Lý Trí"
+    >
+      <Unicons.Uil3Plus size="40" color="#f7941d" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Luyện Lý Trí"
+    >
+      <Unicons.UilBrain size="40" color="#f7941d" />
+    </a>,
+    <a></a>,
+    <a></a>,
+    <a></a>,
     <a href="https://company.esmart.vn/profile/" target="_blank">
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
 ];
+
+// =============================================  Table Sort =============================================
 
 function descendingComparator(a, b, odrderBy) {
   if (b[odrderBy] < a[odrderBy]) {
@@ -279,13 +414,245 @@ function stableSort(array, comparator) {
   return stabilizedThis.map((el) => el[0]);
 }
 
-export default function BasicTable() {
+// Const Head
+const headCells = [
+  {
+    id: "stt",
+    numeric: false,
+    disablePadding: false,
+    label: "STT",
+  },
+];
+const avatar = [
+  {
+    id: "avatar",
+    numeric: false,
+    disablePadding: false,
+    label: "Avatar",
+  },
+];
+const infor_staff = [
+  {
+    id: "hovaten",
+    numeric: false,
+    disablePadding: false,
+    label: "Họ Và Tên",
+    withfix: true,
+  },
+  {
+    id: "vitri",
+    numeric: false,
+    disablePadding: false,
+    label: "Vị Trí",
+    withfix: false,
+  },
+];
+const headCells_course = [
+  {
+    id: "thongtinkhoahoc",
+    numeric: false,
+    disablePadding: false,
+    label: "Thông Tin Khóc Học",
+  },
+  {
+    id: "thongtinnhanvien",
+    numeric: true,
+    disablePadding: false,
+    label: "Thông Tin Nhân Viên",
+  },
+];
+// End HeadCells
+
+function EnhancedTableHead(props) {
+  const { order, orderBy, onRequestSort } = props;
+  const createSortHandler = (property) => (event) => {
+    onRequestSort(event, property);
+  };
   return (
+    <TableHead>
+      <TableRow>
+        {/* STT */}
+        {headCells.map((headCell) => (
+          <TableCell
+            key={headCell.id}
+            align={headCell.numeric ? "center" : "left"}
+            sx={{ width: "5%" }}
+            padding={headCell.disablePadding ? "none" : "normal"}
+            sortDirection={orderBy === headCell.id ? order : false}
+          >
+            <TableSortLabel
+              active={orderBy === headCell.id}
+              direction={orderBy === headCell.id ? order : "asc"}
+              onClick={createSortHandler(headCell.id)}
+            >
+              {headCell.label}
+              {orderBy === headCell.id ? (
+                <Box component="span" sx={visuallyHidden}>
+                  {order === "desc" ? "sorted descending" : "sorted ascending"}
+                </Box>
+              ) : null}
+            </TableSortLabel>
+          </TableCell>
+        ))}
+        {/* Avatar */}
+        {avatar.map((headCell) => (
+          <TableCell
+            key={headCell.id}
+            align={headCell.numeric ? "center" : "left"}
+            sx={{ width: "10%" }}
+            padding={headCell.disablePadding ? "none" : "normal"}
+            sortDirection={orderBy === headCell.id ? order : false}
+          >
+            {headCell.label}
+          </TableCell>
+        ))}
+        {/* Infor Staff */}
+        {infor_staff.map((headCell) => (
+          <TableCell
+            key={headCell.id}
+            align={headCell.numeric ? "center" : "left"}
+            sx={{ width: "15%" }}
+            padding={headCell.disablePadding ? "none" : "normal"}
+            sortDirection={orderBy === headCell.id ? order : false}
+          >
+            <TableSortLabel
+              active={orderBy === headCell.id}
+              direction={orderBy === headCell.id ? order : "asc"}
+              onClick={createSortHandler(headCell.id)}
+            >
+              {headCell.label}
+              {orderBy === headCell.id ? (
+                <Box component="span" sx={visuallyHidden}>
+                  {order === "desc" ? "sorted descending" : "sorted ascending"}
+                </Box>
+              ) : null}
+            </TableSortLabel>
+          </TableCell>
+        ))}
+        {/* Infor Course */}
+        {headCells_course.map((headCell) => (
+          <TableCell
+            key={headCell.id}
+            align={headCell.numeric ? "center" : "left"}
+            padding={headCell.disablePadding ? "none" : "normal"}
+            sortDirection={orderBy === headCell.id ? order : false}
+          >
+            {headCell.label}
+          </TableCell>
+        ))}
+      </TableRow>
+    </TableHead>
+  );
+}
+
+EnhancedTableHead.propTypes = {
+  onRequestSort: PropTypes.func.isRequired,
+  order: PropTypes.oneOf(["asc", "desc"]).isRequired,
+  orderBy: PropTypes.string.isRequired,
+};
+// ============================================= End Table Sort =============================================
+
+// ========================================== Paginations  ==========================================
+function TablePaginationActions(props) {
+  const theme = useTheme();
+  const { count, page, rowsPerPage, onPageChange } = props;
+
+  const handleFirstPageButtonClick = (event) => {
+    onPageChange(event, 0);
+  };
+
+  const handleBackButtonClick = (event) => {
+    onPageChange(event, page - 1);
+  };
+
+  const handleNextButtonClick = (event) => {
+    onPageChange(event, page + 1);
+  };
+
+  const handleLastPageButtonClick = (event) => {
+    onPageChange(event, Math.max(0, Math.ceil(count / rowsPerPage) - 1));
+  };
+
+  return (
+    <Box sx={{ flexShrink: 0, ml: 2.5 }}>
+      <IconButton
+        onClick={handleFirstPageButtonClick}
+        disabled={page === 0}
+        aria-label="first page"
+      >
+        {theme.direction === 'rtl' ? <LastPageIcon /> : <FirstPageIcon />}
+      </IconButton>
+      <IconButton
+        onClick={handleBackButtonClick}
+        disabled={page === 0}
+        aria-label="previous page"
+      >
+        {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
+      </IconButton>
+      <IconButton
+        onClick={handleNextButtonClick}
+        disabled={page >= Math.ceil(count / rowsPerPage) - 1}
+        aria-label="next page"
+      >
+        {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+      </IconButton>
+      <IconButton
+        onClick={handleLastPageButtonClick}
+        disabled={page >= Math.ceil(count / rowsPerPage) - 1}
+        aria-label="last page"
+      >
+        {theme.direction === 'rtl' ? <FirstPageIcon /> : <LastPageIcon />}
+      </IconButton>
+    </Box>
+  );
+}
+
+TablePaginationActions.propTypes = {
+  count: PropTypes.number.isRequired,
+  onPageChange: PropTypes.func.isRequired,
+  page: PropTypes.number.isRequired,
+  rowsPerPage: PropTypes.number.isRequired,
+};
+// ========================================== End Pagination ==========================================
+
+
+
+
+
+
+export default function BasicTable() {
+  const [order, setOrder] = React.useState("asc");
+  const [orderBy, setOrderBy] = React.useState("calories");
+  const [selected, setSelected] = React.useState([]);
+  const [page, setPage] = React.useState(0);
+  const [dense, setDense] = React.useState(false);
+  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+
+  const handleRequestSort = (event, property) => {
+    const isAsc = orderBy === property && order === "asc";
+    setOrder(isAsc ? "desc" : "asc");
+    setOrderBy(property);
+  };
+
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = (event) => {
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0);
+  };
+  // Avoid a layout jump when reaching the last page with empty rows.
+  const emptyRows =
+    page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
+
+  return (
+    <Box sx={{ flexShrink: 0, ml: 2.5 }}>
     <div className="container__table">
       <h3>DANH SÁCH NHÂN VIÊN</h3>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
-          <TableHead>
+        <Table sx={{ minWidth: 650 }} aria-label="simple table custom pagination">
+          {/* <TableHead>
             <TableRow>
               <TableCell sx={{ width: "5%" }}>STT</TableCell>
               <TableCell sx={{ width: "10%" }}>Avatar</TableCell>
@@ -302,31 +669,64 @@ export default function BasicTable() {
                 Thông Tin Nhân Viên
               </TableCell>
             </TableRow>
-          </TableHead>
+          </TableHead> */}
+          <EnhancedTableHead
+            order={order}
+            orderBy={orderBy}
+            onRequestSort={handleRequestSort}
+          />
           <TableBody>
-            {rows.map((row) => (
-              <TableRow
-                key={row.stt}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              >
-                <TableCell align="left">{row.stt}</TableCell>
-                <TableCell align="left">{row.avatar}</TableCell>
-                <TableCell align="left">{row.hovaten}</TableCell>
-                <TableCell align="left">{row.vitri}</TableCell>
-                <TableCell align="left" className="edit__course">
-                  {row.khoahoc_1}
-                  {row.khoahoc_2}
-                  {row.khoahoc_3}
-                  {row.khoahoc_4}
-                  {row.khoahoc_5}
-                  {row.khoahoc_6}
-                </TableCell>
-                <TableCell align="center">{row.chitiet}</TableCell>
-              </TableRow>
-            ))}
+            {stableSort(rows, getComparator(order, orderBy))
+              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+              .map((row) => (
+                <TableRow
+                  key={row.stt}
+                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                >
+                  <TableCell align="left">{row.stt}</TableCell>
+                  <TableCell align="left">{row.avatar}</TableCell>
+                  <TableCell align="left">{row.hovaten}</TableCell>
+                  <TableCell align="left">{row.vitri}</TableCell>
+                  <TableCell align="left" className="edit__course">
+                    {row.khoahoc_1}
+                    {row.khoahoc_2}
+                    {row.khoahoc_3}
+                    {row.khoahoc_4}
+                    {row.khoahoc_5}
+                    {row.khoahoc_6}
+                  </TableCell>
+                  <TableCell align="center">{row.chitiet}</TableCell>
+                </TableRow>
+              ))}
+              {emptyRows > 0 && (
+            <TableRow style={{ height: 53 * emptyRows }}>
+              <TableCell colSpan={6} />
+            </TableRow>
+          )}
           </TableBody>
+          <TableFooter >
+          <TableRow >
+            <TablePagination className="edit__pagination" 
+              rowsPerPageOptions={[10, 15, 20, { label: 'All', value: -1 }]}
+              colSpan={6}
+              count={rows.length}
+              rowsPerPage={rowsPerPage}
+              page={page}
+              SelectProps={{
+                inputProps: {
+                  'aria-label': 'rows per page',
+                },
+                native: true,
+              }}
+              onPageChange={handleChangePage}
+              onRowsPerPageChange={handleChangeRowsPerPage}
+              ActionsComponent={TablePaginationActions}
+            />
+          </TableRow>
+        </TableFooter>
         </Table>
       </TableContainer>
     </div>
+    </Box>
   );
 }
