@@ -7,120 +7,305 @@ class InforCourse extends Component {
   render() {
     return (
       <div className="container__course">
-        <CardGroup>
-          <Card>
-            <Card.Img
-              className="edit__img"
-              variant="top"
-              src="https://res.cloudinary.com/smarttax/image/upload/v1620802936/C%C3%A2u_chuy%E1%BB%87n_eSmart_truy%E1%BB%81n_c%E1%BA%A3m_h%E1%BB%A9ng_v%E1%BB%81_%C4%91%E1%BB%99ng_l%E1%BB%B1c_s%E1%BB%91ng_zgosfh.png"
-            />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">
-                <Clock />
-              </small>
-            </Card.Footer>
-          </Card>
-          <Card>
-            <Card.Img
-              className="edit__img"
-              variant="top"
-              src="https://res.cloudinary.com/smarttax/image/upload/v1620802936/V%C4%83n_ph%C3%B2ng_ti%E1%BB%87n_nghi_th%C3%AAm_view_c%E1%BB%B1c_ch%E1%BA%A5t_zqjht6.png"
-            />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This card has supporting text below as a natural lead-in to
-                additional content.{" "}
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
-          </Card>
-          <Card>
-            <Card.Img
-              className="edit__img"
-              variant="top"
-              src="https://res.cloudinary.com/smarttax/image/upload/v1620802936/Kh%C3%B4ng_gian_m%E1%BB%9Bi_kh%C6%A1i_ni%E1%BB%81m_h%E1%BB%A9ng_kh%E1%BB%9Fi_vy2xpa.png"
-            />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
-          </Card>
-        </CardGroup>
-        <CardGroup className = "edit__card">
-          <Card>
-            <Card.Img
-              className="edit__img"
-              variant="top"
-              src="https://res.cloudinary.com/smarttax/image/upload/v1620802936/C%C3%A2u_chuy%E1%BB%87n_eSmart_truy%E1%BB%81n_c%E1%BA%A3m_h%E1%BB%A9ng_v%E1%BB%81_%C4%91%E1%BB%99ng_l%E1%BB%B1c_s%E1%BB%91ng_zgosfh.png"
-            />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">
-                <Clock />
-              </small>
-            </Card.Footer>
-          </Card>
-          <Card>
-            <Card.Img
-              className="edit__img"
-              variant="top"
-              src="https://res.cloudinary.com/smarttax/image/upload/v1620802936/V%C4%83n_ph%C3%B2ng_ti%E1%BB%87n_nghi_th%C3%AAm_view_c%E1%BB%B1c_ch%E1%BA%A5t_zqjht6.png"
-            />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This card has supporting text below as a natural lead-in to
-                additional content.{" "}
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
-          </Card>
-          <Card>
-            <Card.Img
-              className="edit__img"
-              variant="top"
-              src="https://res.cloudinary.com/smarttax/image/upload/v1620802936/Kh%C3%B4ng_gian_m%E1%BB%9Bi_kh%C6%A1i_ni%E1%BB%81m_h%E1%BB%A9ng_kh%E1%BB%9Fi_vy2xpa.png"
-            />
-            <Card.Body>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </Card.Footer>
-          </Card>
-        </CardGroup>
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://res.cloudinary.com/smarttax/image/upload/v1638260110/Icon_Course/Active/okrs_ekowif.png"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">Hoàn Thành: 98%</h3>
+                    <h1 className="content__card_h1">OKRs</h1>
+                    <p className="content__card_p">
+                      Tiêu Chuẩn: Đạt 8 điểm bài kiểm tra <br />
+                      Lưu Ý: Mr. Si training và đánh giá
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                    Thông Tin Thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://res.cloudinary.com/smarttax/image/upload/v1638260110/Icon_Course/Active/customer_service_tlvwk0.png"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">Hoàn Thành: 40%</h3>
+                    <h1 className="content__card_h1">Customer Service</h1>
+                    <p className="content__card_p">
+                      Tiêu Chuẩn: Đạt 8 điểm bài kiểm tra <br />
+                      Lưu Ý: Mr. Si training và đánh giá
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                    Thông Tin Thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="w-100" />
+            <div className="col">
+              <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://res.cloudinary.com/smarttax/image/upload/v1638260110/Icon_Course/Active/productievwork_nvaajv.png"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">Hoàn Thành: 96%</h3>
+                    <h1 className="content__card_h1">Productive Work</h1>
+                    <p className="content__card_p">
+                      Tiêu Chuẩn: Đạt 8 điểm bài kiểm tra <br />
+                      Lưu Ý: Mr. Thuận training và đánh giá
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                    Thông Tin Thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://res.cloudinary.com/smarttax/image/upload/v1638260111/Icon_Course/Active/report_q8hl8h.png"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">Hoàn Thành: 96%</h3>
+                    <h1 className="content__card_h1">Report</h1>
+                    <p className="content__card_p">
+                      Tiêu Chuẩn: Đạt 8 điểm bài kiểm tra <br />
+                      Lưu Ý: Mr. Thuận training và đánh giá
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                    Thông Tin Thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="w-100" />
+            <div className="col">
+              <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://res.cloudinary.com/smarttax/image/upload/v1638260111/Icon_Course/Active/5s_xrsi26.png"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">Hoàn Thành: 100%</h3>
+                    <h1 className="content__card_h1">5S</h1>
+                    <p className="content__card_p">
+                      Tiêu Chuẩn: Không đánh giá <br />
+                      Lưu Ý: Mr. Si trianing và đánh giá
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                    Thông Tin Thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://res.cloudinary.com/smarttax/image/upload/v1638260110/Icon_Course/Active/Flow_Chart_bc9evk.png"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">Hoàn Thành: 26%</h3>
+                    <h1 className="content__card_h1">Flow Chart</h1>
+                    <p className="content__card_p">
+                      Tiêu Chuẩn: Đạt 8 điểm bài kiểm tra <br />
+                      Lưu Ý: Mr. Si training và đánh giá
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                    Thông Tin Thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="w-100" />
+            <div className="col">
+              <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://res.cloudinary.com/smarttax/image/upload/v1638260110/Icon_Course/Active/6_hats_pkxawq.png"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">Hoàn Thành: 0%</h3>
+                    <h1 className="content__card_h1">6 Hats</h1>
+                    <p className="content__card_p">
+                      Tiêu Chuẩn: Không kiểm tra <br />
+                      Lưu Ý: Sếp training và đánh giá
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                    Thông Tin Thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://res.cloudinary.com/smarttax/image/upload/v1638260110/Icon_Course/Active/chiakhoalanhdao_hhby6u.png"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">Hoàn Thành: 0%</h3>
+                    <h1 className="content__card_h1">Biểu đồ xương cá</h1>
+                    <p className="content__card_p">
+                      Tiêu Chuẩn: Không kiểm tra <br />
+                      Lưu Ý: Sếp training và đánh giá
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                    Thông Tin Thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="w-100" />
+            <div className="col">
+              <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://res.cloudinary.com/smarttax/image/upload/v1638260111/Icon_Course/Active/tao_dong_luc_czas2b.png"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">Hoàn Thành: 0%</h3>
+                    <h1 className="content__card_h1">Brainstorm</h1>
+                    <p className="content__card_p">
+                      Tiêu Chuẩn: Không kiểm tra <br />
+                      Lưu Ý: Sếp training và đánh giá
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                    Thông Tin Thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://res.cloudinary.com/smarttax/image/upload/v1638260111/Icon_Course/Active/why__bvi2nt.png"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">Hoàn Thành: 0%</h3>
+                    <h1 className="content__card_h1">5 Whys</h1>
+                    <p className="content__card_p">
+                      Tiêu Chuẩn: Không kiểm tra <br />
+                      Lưu Ý: Sếp training và đánh giá
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                  Thông Tin Thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="w-100" />
+            <div className="col">
+              <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://res.cloudinary.com/smarttax/image/upload/v1638260110/Icon_Course/Active/logic_womup1.png"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">Hoàn Thành: 0%</h3>
+                    <h1 className="content__card_h1">5 Công cụ để tư duy</h1>
+                    <p className="content__card_p">
+                      Tiêu Chuẩn: Không kiểm tra <br />
+                      Lưu Ý: Sếp training và đánh giá
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                  Thông Tin Thêm
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              {/* <div className="wrapper">
+                <div className="blog_post">
+                  <div className="img_pod">
+                    <img
+                      className="img__card"
+                      src="https://pbs.twimg.com/profile_images/890901007387025408/oztASP4n.jpg"
+                      alt="random image"
+                    />
+                  </div>
+                  <div className="container_copy">
+                    <h3 className="content__card">12 January 2019</h3>
+                    <h1 className="content__card_h1">CSS Positioning</h1>
+                    <p className="content__card_p">
+                      The position property specifies the type of positioning
+                      method used for an element (static, relative, absolute,
+                      fixed, or sticky).
+                    </p>
+                  </div>
+                  <a className="btn_primary" href="#">
+                    Read More
+                  </a>
+                </div>
+              </div> */}
+            </div>
+            
+          </div>
+        </div>
       </div>
     );
   }

@@ -4,8 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import ReactRouter from "./components/ReactRouter/ReactRouter";
 import NavbarTable from "./components/Navbar/NavbarTable";
 import Footer from "./components/Footers/Footer";
-import TableKeToan from "./components/TablePhongBan/KeToan/TableKeToan";
-import TableTongHop from "./components/TablePhongBan/TongHop/TableTongHop";
+// import Demo from "./components/Another/InforCourse/Demo/Demo";
 
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
     <div className="Container_root">
       <NavbarTable />
       <Footer/>
-     
+      {/* <Demo/> */}
       </div>
   );
 }
