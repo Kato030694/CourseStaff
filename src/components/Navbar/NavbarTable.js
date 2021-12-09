@@ -30,6 +30,7 @@ class NavbarTable extends Component {
               <Nav className="me-auto"></Nav>
               <Nav>
               {/* <Nav.Link href="" as={Link} to='/home'>Trang Chủ</Nav.Link> */}
+              <Nav.Link href="" as={Link} to={"/esmartstaff"} href="/esmartstaff">Trang Chủ</Nav.Link>
                 <NavDropdown title="Phòng Ban" id="collasible-nav-dropdown">
                   <NavDropdown.Item href="/tablekinhdoanh"  as={Link} to={"/tablekinhdoanh"}>
                     Kinh Doanh
