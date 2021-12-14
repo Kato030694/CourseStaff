@@ -35,3 +35,36 @@ td{
   border-bottom: none !important;
   width: 50%;
 }
+
+/* =================================================== o0o  ===================================================*/
+.editcontent{
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+.editcontent .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.editcontent:hover .tooltiptext {
+  visibility: visible;
+}
+.css-rmz4vk{
+  margin-top: 20px;
+}
+.change__border__left{
+  padding-left:30px !important
+}

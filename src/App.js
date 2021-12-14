@@ -4,8 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import ReactRouter from "./components/ReactRouter/ReactRouter";
 import NavbarTable from "./components/Navbar/NavbarTable";
 import Footer from "./components/Footers/Footer";
-// import Timeline from "./components/Another/TimeLine/Timeline";
-// import Demo from "./components/Another/InforCourse/Demo/Demo";
+import TimeLine from "./components/Another/TimeLine/TimeLine";
+
+
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       <NavbarTable />
       <Footer/>
       {/* <Demo/> */}
-      {/* <Timeline/> */}
+     {/* <TimeLine/> */}
+     {/* <HorizalTimeLine/> */}
       </div>
   );
 }

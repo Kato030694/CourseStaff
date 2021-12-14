@@ -79,7 +79,6 @@ import KhanhVy from "../../Another/CompleteCourse/KeToanDichVu/KhanhVy/KhanhVy";
 
 function createData(
   stt,
-  avatar,
   hovaten,
   vitri,
   khoahoc_1,
@@ -111,7 +110,6 @@ function createData(
 ) {
   return {
     stt,
-    avatar,
     hovaten,
     vitri,
     khoahoc_1,
@@ -147,33 +145,65 @@ const rows = [
   // ========================================= NHƯ Ý =========================================
   createData(
     1,
-    <Unicons.UilUserSquare size="40" color="#f7941d" />,
+
     "Lê Thị Như Ý",
     "KT Nội Bộ",
     // ========================================= Danh Sách Khóa Học =========================================
     // ========================================= Active =========================================
-    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
+    <div className="editcontent">
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Customer Service"
-    >
+      <span className="tooltiptext">
+        <span>Course: OKRs</span>
+        <br />
+        <span>Time to Learn: 17/2/2020</span>
+        <br />
+        {/* <span>Point: 8/10</span> */}
+        <br />
+        <span>Status: Pass</span>
+        <br />
+      </span>
+    </div>,
+    <div className="editcontent">
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Productive Work"
-    >
+      <span className="tooltiptext">
+        <span>Course: Customer Service</span>
+        <br />
+        <span>Time to Learn: 20/2/2020</span>
+        <br />
+        {/* <span>Point: 8/10</span> */}
+        <br />
+        <span>Status: Pass</span>
+        <br />
+      </span>
+    </div>,
+    <div className="editcontent">
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png" />
-    </a>,
-    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Report">
+      <span className="tooltiptext">
+        <span>Course: Productive Work</span>
+        <br />
+        <span>Time to Learn: 10/10/2020</span>
+        <br />
+        {/* <span>Point: 7/10</span> */}
+        <br />
+        <span>Status: Pass</span>
+        <br />
+      </span>
+    </div>,
+
+    <div className="editcontent">
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png" />
-    </a>,
+      <span className="tooltiptext">
+        <span>Course: Report</span>
+        <br />
+        <span>Time to Learn: 10/10/2020</span>
+        <br />
+        {/* <span>Point: 7/10</span> */}
+        <br />
+        <span>Status: Pass</span>
+        <br />
+      </span>
+    </div>,
+
     <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5S">
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png" />
     </a>,
@@ -228,7 +258,7 @@ const rows = [
   // ========================================= KIM HỒNG =========================================
   createData(
     2,
-    <Unicons.UilUserSquare size="40" color="#f7941d" />,
+
     "Võ Thị Kim Hồng",
     "KT Nội Bộ",
     // Course
@@ -308,10 +338,6 @@ const rows = [
   ),
   createData(
     3,
-    <img
-      className="edit__image"
-      src="https://res.cloudinary.com/smarttax/image/upload/v1620802936/V%C4%83n_ph%C3%B2ng_ti%E1%BB%87n_nghi_th%C3%AAm_view_c%E1%BB%B1c_ch%E1%BA%A5t_zqjht6.png"
-    />,
 
     "Thong Tố Minh",
     "Marketing",
@@ -349,7 +375,7 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
-    // ========================================= Deactive =========================================
+    // Deactive
     <a
       href="http://esmart.vn"
       target="_blank"
@@ -369,10 +395,19 @@ const rows = [
     >
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
     </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
+
     <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
     </a>,
-    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic ">
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png" />
     </a>,
     <a></a>,
@@ -381,8 +416,7 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    // Encourse
+    // EndCourse
     <p>
       <ToMInh />
     </p>,
@@ -393,11 +427,11 @@ const rows = [
   // ========================================= QUỲNH THU =========================================
   createData(
     4,
-    <Unicons.UilUserSquare size="40" color="#f7941d" />,
+
     "Trương Thị Quỳnh Thu",
     "Kinh Doanh",
-    // Course
-    // Active
+    //  ========================================= Course =========================================
+    // ========================================= Active =========================================
     <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
     </a>,
@@ -431,30 +465,42 @@ const rows = [
     >
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png" />
     </a>,
-    <a href="http://esmart.vn"
-    target="_blank"
-    rel="noreferrer"
-    title="Logic">
-      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848526/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-13_aqahv0.png" />
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Chốt Sale"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848526/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-16_qjblhh.png" />
     </a>,
-    <a href="http://esmart.vn"
-    target="_blank"
-    rel="noreferrer"
-    title="Chốt Sale"><img src="https://res.cloudinary.com/smarttax/image/upload/v1638848526/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-16_qjblhh.png"/></a>,
-    <a href="http://esmart.vn"
-    target="_blank"
-    rel="noreferrer"
-    title="Thuyết Phục"><img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-09_br9hb4.png"/></a>,
-    <a href="http://esmart.vn"
-    target="_blank"
-    rel="noreferrer"
-    title="Tạo Động Lực"><img src="https://res.cloudinary.com/smarttax/image/upload/v1638848526/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-10_vjgfjo.png"/></a>,
-    <a href="http://esmart.vn"
-    target="_blank"
-    rel="noreferrer"
-    title="Chìa Khóa Lãnh Đạo"><img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-11_uz1zhv.png"/></a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Thuyết Phục"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-09_br9hb4.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Tạo Động Lực"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848526/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-10_vjgfjo.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Chìa Khóa Lãnh Đạo"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-11_uz1zhv.png" />
+    </a>,
     <a></a>,
-    // Deactive
+    <a></a>,
+    // ========================================= Deactive =========================================
+    <a></a>,
     <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="6 Hats">
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png" />
     </a>,
@@ -466,8 +512,19 @@ const rows = [
     >
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
     </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
     <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
       <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png" />
     </a>,
     <a></a>,
     <a></a>,
@@ -475,10 +532,7 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    // End Course
+    // ========================================= End Course =========================================
     <p>
       <QuynhThu />
     </p>,
@@ -488,59 +542,112 @@ const rows = [
   ),
   createData(
     5,
-    <img
-      className="edit__image"
-      src="https://res.cloudinary.com/smarttax/image/upload/v1632707806/AlbumeSmart/hr_myb3zv.jpg"
-    />,
+
     "Võ Thị Nguyên",
     "Kinh Doanh",
-    // COURSE
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    // ========================================= COURSE =========================================
+    // ========================================= Active =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Customer Service"
     >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Productive Work"
     >
-      <Unicons.UilBrain size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Report">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5S">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Flow Chart"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848526/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-13_aqahv0.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Chốt Sale"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848526/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-16_qjblhh.png" />
+    </a>,
+    <a></a>,
+    <a></a>,
+    <a></a>,
+    <a></a>,
+    // ========================================= Deactive =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="6 Hats">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="14 Deming"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Thuyết Phục"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-09_o4crzm.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Tạo Động Lực"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-10_euleqc.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Chìa Khóa Lãnh Đạo"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-11_zi29bm.png" />
     </a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    // END COURSE
+    //=========================================  END COURSE =========================================
     <p>
       <NguyenVo />
     </p>,
@@ -548,39 +655,46 @@ const rows = [
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
+  // ========================================= Hà Trang =========================================
   createData(
     6,
-    <img
-      className="edit__image"
-      src="https://res.cloudinary.com/smarttax/image/upload/v1620802936/V%C4%83n_ph%C3%B2ng_ti%E1%BB%87n_nghi_th%C3%AAm_view_c%E1%BB%B1c_ch%E1%BA%A5t_zqjht6.png"
-    />,
 
     "Lê Thị Hà Trang",
     "Kinh Doanh",
-    // COURSE
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    // ========================================= COURSE =========================================
+    // ========================================= Active =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Customer Service"
     >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Productive Work"
     >
-      <Unicons.UilBrain size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Report">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5S">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Flow Chart"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png" />
     </a>,
     <a></a>,
     <a></a>,
@@ -588,22 +702,47 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
+    // ========================================= Deactive =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="6 Hats">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="14 Deming"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Chốt Sales"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-16_zosezr.png" />
+    </a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    // END COURSE
+    // ========================================= END COURSE =========================================
     <p>
       <HaTrang />
     </p>,
@@ -611,38 +750,38 @@ const rows = [
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
+  // ========================================= Đô My =========================================
   createData(
     7,
-    <img
-      className="edit__image"
-      src="https://res.cloudinary.com/smarttax/image/upload/v1637055120/StaffeSmart/z2574681939751_091b3e274e1e61fa44fe6fe2711d9abd_fenapp.jpg"
-    />,
 
     "Đào Đô My",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    // ========================================= Course =========================================
+    // ========================================= Active =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Customer Service"
     >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
+      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" /> */}
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Productive Work"
     >
-      <Unicons.UilBrain size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Report">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5S">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png" />
     </a>,
     <a></a>,
     <a></a>,
@@ -651,20 +790,61 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
+    // ========================================= Deactive =========================================
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Customer Service"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848537/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-01_pn4bpl.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Flow Chart"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-07_jsb4gi.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="6 Hats">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="14 Deming"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Chốt Sales"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-16_zosezr.png" />
+    </a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
+    // ========================================= END COURSE =========================================
     <p>
       <DoMy />
     </p>,
@@ -672,37 +852,46 @@ const rows = [
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
+  // ========================================= KALI =========================================
   createData(
     8,
-    <img
-      className="edit__image"
-      src="https://res.cloudinary.com/smarttax/image/upload/v1632707806/AlbumeSmart/hr_myb3zv.jpg"
-    />,
+
     "Ngô Thị Ka Li",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    //  ========================================= Course =========================================
+    // ========================================= Active =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Customer Service"
     >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Productive Work"
     >
-      <Unicons.UilBrain size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Report">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5S">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Flow Chart"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png" />
     </a>,
     <a></a>,
     <a></a>,
@@ -710,21 +899,47 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
+    // ========================================= Deactive =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="6 Hats">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="14 Deming"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Chốt Sales"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-16_zosezr.png" />
+    </a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
+    // ========================================= ENDCOURSE =========================================
     <p>
       <KaLi />
     </p>,
@@ -732,34 +947,78 @@ const rows = [
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
+  // ========================================= HƯƠNG QUỲNH =========================================
   createData(
     9,
-    <img className="edit__image" src="" />,
+
     "Lý Hương Quỳnh",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    // ========================================= Course =========================================
+    // ========================================= Active =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Customer Service"
     >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Productive Work"
     >
-      <Unicons.UilBrain size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Report">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5S">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Flow Chart"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png" />
+    </a>,
+    <a></a>,
+    <a></a>,
+    <a></a>,
+    <a></a>,
+    <a></a>,
+    <a></a>,
+    // ========================================= Deactive =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="6 Hats">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="14 Deming"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png" />
     </a>,
     <a></a>,
     <a></a>,
@@ -768,20 +1027,7 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
+    // ========================================= ENDCOURSE =========================================
     <p>
       <HuongQuynh />
     </p>,
@@ -789,34 +1035,46 @@ const rows = [
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
+  // ========================================= NGỌC GIÀU =========================================
   createData(
     10,
-    <img className="edit__image" src="" />,
+
     "Nguyễn Thị Ngọc Giàu",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    // ========================================= COURSE =========================================
+    // ========================================= ACTIVE =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Customer Service"
     >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
+      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" /> */}
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Productive Work"
     >
-      <Unicons.UilBrain size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Report">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5S">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Flow Chart"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png" />
     </a>,
     <a></a>,
     <a></a>,
@@ -824,16 +1082,48 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
+    // ========================================= DEACTIVE =========================================
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Customer Service"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848537/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-01_pn4bpl.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="6 Hats">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="14 Deming"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Chốt Sales"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-16_zosezr.png" />
+    </a>,
     <a></a>,
     <a></a>,
     <a></a>,
@@ -846,34 +1136,46 @@ const rows = [
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
+  // ========================================= NHƯ THẢO =========================================
   createData(
     11,
-    <img className="edit__image" src="" />,
+
     "Phạm Hoàng Như Thảo",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    //  ========================================= Course =========================================
+    // ========================================= Active =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Customer Service"
     >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
+      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" /> */}
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Productive Work"
     >
-      <Unicons.UilBrain size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Report">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5S">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Flow Chart"
+    >
+      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png" /> */}
     </a>,
     <a></a>,
     <a></a>,
@@ -881,21 +1183,61 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
+    // ========================================= Deactive =========================================
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Customer Service"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848537/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-01_pn4bpl.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Flow Chart"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-07_jsb4gi.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="6 Hats">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="14 Deming"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Chốt Sales"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-16_zosezr.png" />
+    </a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
+    // ========================================= END COURSE =========================================
     <p>
       <NhuThao />
     </p>,
@@ -903,34 +1245,46 @@ const rows = [
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
+  // ========================================= KHÁNH LINH =========================================
   createData(
     12,
-    <img className="edit__image" src="" />,
+
     "Ngũ Khánh Linh",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    // ========================================= COURSE =========================================
+    // ========================================= ACTIVE =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Customer Service"
     >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Productive Work"
     >
-      <Unicons.UilBrain size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Report">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5S">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Flow Chart"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png" />
     </a>,
     <a></a>,
     <a></a>,
@@ -938,21 +1292,47 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
+    // ========================================= DEACTIVE =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="6 Hats">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="14 Deming"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Chốt Sales"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-16_zosezr.png" />
+    </a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
+    // ========================================= END COURSE =========================================
     <p>
       <KhanhLinh />
     </p>,
@@ -960,34 +1340,46 @@ const rows = [
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
+  // ========================================= NHẤT VY =========================================
   createData(
     13,
-    <img className="edit__image" src="" />,
+
     "Nguyễn Lê Nhất Vy",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    // ========================================= COURSE =========================================
+    // ========================================= ACTIVE =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Customer Service"
     >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
+      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" /> */}
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Productive Work"
     >
-      <Unicons.UilBrain size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Report">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5S">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Flow Chart"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png" />
     </a>,
     <a></a>,
     <a></a>,
@@ -995,21 +1387,47 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
+    // ========================================= DEACTIVE =========================================
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Customer Service"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848537/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-01_pn4bpl.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="6 Hats">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="14 Deming"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png" />
+    </a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
+    // ========================================= END COURSE =========================================
     <p>
       <NhatVy />
     </p>,
@@ -1017,34 +1435,46 @@ const rows = [
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
+  // ========================================= HUỲNH LONG ẨN =========================================
   createData(
     14,
-    <img className="edit__image" src="" />,
+
     "Huỳnh Long Ẩn",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
+    // ========================================= COURSE =========================================
+    // ========================================= ACTIVE =========================================
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="OKRs">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png" />
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Customer Service"
     >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
+      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" /> */}
     </a>,
     <a
       href="http://esmart.vn"
       target="_blank"
       rel="noreferrer"
-      title="Luyện Lý Trí"
+      title="Productive Work"
     >
-      <Unicons.UilBrain size="40" color="#f7941d" />
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Report">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5S">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Flow Chart"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png" />
     </a>,
     <a></a>,
     <a></a>,
@@ -1052,21 +1482,47 @@ const rows = [
     <a></a>,
     <a></a>,
     <a></a>,
+    // ========================================= DEACTIVE =========================================
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="Customer Service"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848537/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-01_pn4bpl.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="6 Hats">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="14 Deming"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png" />
+    </a>,
+    <a
+      href="http://esmart.vn"
+      target="_blank"
+      rel="noreferrer"
+      title="BrainStorm"
+    >
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="5 Whys">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png" />
+    </a>,
+    <a href="http://esmart.vn" target="_blank" rel="noreferrer" title="Logic">
+      <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png" />
+    </a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
     <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
-    <a></a>,
+    // ========================================= END COURSE =========================================
     <p>
       <LongAn />
     </p>,
@@ -1074,6 +1530,7 @@ const rows = [
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
+  // ========================================= TẠ HỒNG ÂN =========================================
   createData(
     15,
     <img className="edit__image" src="" />,
@@ -3165,14 +3622,14 @@ const headCells = [
     label: "STT",
   },
 ];
-const avatar = [
-  {
-    id: "avatar",
-    numeric: false,
-    disablePadding: false,
-    label: "Avatar",
-  },
-];
+// const avatar = [
+//   {
+//     id: "avatar",
+//     numeric: false,
+//     disablePadding: false,
+//     label: "Avatar",
+//   },
+// ];
 const infor_staff = [
   {
     id: "hovaten",
@@ -3196,6 +3653,8 @@ const headCells_course = [
     disablePadding: false,
     label: "Thông Tin Khóc Học",
   },
+];
+const percent__course = [
   {
     id: "tiendohoanthanh",
     numeric: true,
@@ -3208,8 +3667,8 @@ const headCells_course = [
     disablePadding: false,
     label: "Thông Tin Nhân Viên",
   },
-  ,
 ];
+
 // End HeadCells
 
 function EnhancedTableHead(props) {
@@ -3244,7 +3703,7 @@ function EnhancedTableHead(props) {
           </TableCell>
         ))}
         {/* Avatar */}
-        {avatar.map((headCell) => (
+        {/* {avatar.map((headCell) => (
           <TableCell
             key={headCell.id}
             align={headCell.numeric ? "center" : "left"}
@@ -3254,7 +3713,7 @@ function EnhancedTableHead(props) {
           >
             {headCell.label}
           </TableCell>
-        ))}
+        ))} */}
         {/* Infor Staff */}
         {infor_staff.map((headCell) => (
           <TableCell
@@ -3280,6 +3739,18 @@ function EnhancedTableHead(props) {
         ))}
         {/* Infor Course */}
         {headCells_course.map((headCell) => (
+          <TableCell
+            key={headCell.id}
+            sx={{ width: "40%" }}
+            align={headCell.numeric ? "center" : "left"}
+            padding={headCell.disablePadding ? "none" : "normal"}
+            sortDirection={orderBy === headCell.id ? order : false}
+          >
+            {headCell.label}
+          </TableCell>
+        ))}
+        {/* Another */}
+        {percent__course.map((headCell) => (
           <TableCell
             key={headCell.id}
             align={headCell.numeric ? "center" : "left"}
@@ -3438,11 +3909,11 @@ export default function BasicTable() {
                     key={row.stt}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                    <TableCell align="left">{row.stt}</TableCell>
-                    <TableCell align="left">{row.avatar}</TableCell>
+                    <TableCell align="center">{row.stt}</TableCell>
+                    {/* <TableCell align="left">{row.avatar}</TableCell> */}
                     <TableCell align="left">{row.hovaten}</TableCell>
                     <TableCell align="left">{row.vitri}</TableCell>
-                    <TableCell align="left">
+                    <TableCell>
                       <TableCell className="change__border">
                         {row.khoahoc_1}
                         {row.khoahoc_2}
@@ -3457,7 +3928,7 @@ export default function BasicTable() {
                         {row.khoahoc_11}
                         {row.khoahoc_12}
                       </TableCell>
-                      <TableCell className="change__border">
+                      <TableCell className="change__border change__border__left">
                         {row.khoahoc_13}
                         {row.khoahoc_14}
                         {row.khoahoc_15}

@@ -10,6 +10,7 @@ import TableKeToan from './../TablePhongBan/KeToan/TableKeToan';
 import TableTongHop from './../TablePhongBan/TongHop/TableTongHop';
 import InforCourse from "../Another/InforCourse/InforCourse";
 import News from '../Another/News/News';
+import TimeLine from '../Another/TimeLine/TimeLine';
 import "./navbarTable.css";
 
 class NavbarTable extends Component {
@@ -24,6 +25,7 @@ class NavbarTable extends Component {
                 src="https://res.cloudinary.com/smarttax/image/upload/v1637116606/Logo-04_hqeuft.png"
                 style={{ width: 50 }}
               />
+              <span className="edit__logo">eSmart</span>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -42,8 +44,9 @@ class NavbarTable extends Component {
                     Tổng Hợp
                   </NavDropdown.Item>
                 </NavDropdown>
+                <Nav.Link href="" as={Link} to={"/timeline"} href="/timeline">TimeLine</Nav.Link>
                 <Nav.Link href="" as={Link} to={"/thongtinkhoahoc"} href="/thongtinkhoahoc">Thông Tin Khóa Học</Nav.Link>
-                <Nav.Link href="" as={Link} to={"/thongbao"} href="/thongbao">Thông Báo</Nav.Link>
+                
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -69,8 +72,8 @@ class NavbarTable extends Component {
             <Route path="/thongtinkhoahoc">
               <InforCourse/>
             </Route>
-            <Route path="/thongbao">
-              <News/>
+            <Route path="/timeline">
+              <TimeLine/>
             </Route>
             </Switch>
           </div>
