@@ -39,5 +39,5 @@ CircularProgressWithLabel.propTypes = {
 
 export default function ToMInh() {
   
-  return <CircularProgressWithLabel value={31} />;
+  return <CircularProgressWithLabel value={43} />;
 }

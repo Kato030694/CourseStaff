@@ -459,7 +459,7 @@ export default function TableKinhDoanh() {
 
   return (
     <div className="container__table">
-      <h3 className="edit__font">BỘ PHẬN KINH DOANH</h3>
+      <h3 className="edit__font">PHÒNG KINH DOANH</h3>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           {/* <TableHead>

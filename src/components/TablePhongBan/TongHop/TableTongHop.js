@@ -7,7 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import PropTypes from "prop-types";
-import TablePagination from "@mui/material/TablePagination";
+// import TablePagination from "@mui/material/TablePagination";
 import Box from "@mui/material/Box";
 import TableSortLabel from "@mui/material/TableSortLabel";
 import { visuallyHidden } from "@mui/utils";
@@ -102,7 +102,7 @@ const rows = [
     >
       <Unicons.Uil3Plus size="40" color="#f7941d" />
     </a>,
-    <a href="https://company.esmart.vn/profile/" target="_blank">
+    <a href="https://company.esmart.vn/profile/" target="_blank" rel="noopener noreferrer">
       <Unicons.UilUser size="40" color="#f7941d" />
     </a>
   ),
@@ -462,32 +462,10 @@ export default function TableTongHop() {
 
   return (
     <div className="container__table">
-      <h3 className="edit__font">BỘ PHẬN TỔNG HỢP</h3>
+      <h3 className="edit__font">PHÒNG TỔNG HỢP</h3>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
-          {/* <TableHead>
-            <TableRow>
-              <TableCell sx={{ width: "5%" }} >
-                <TableSortLabel >
-                STT
-                </TableSortLabel>
-                </TableCell>
-              <TableCell sx={{ width: "10%" }}>Avatar</TableCell>
-              <TableCell align="left" sx={{ width: "20%" }}>
-                Họ và Tên
-              </TableCell>
-              <TableCell align="left" sx={{ width: "15%" }}>
-                Vị Trí
-              </TableCell>
-              <TableCell align="left" sx={{ width: "35%" }}>
-                Thông Tin Khóa Học
-              </TableCell>
-              <TableCell align="center" sx={{ width: "15%" }}>
-                Thông Tin Nhân Viên
-              </TableCell>
-            </TableRow>
-          </TableHead> */}
-
+          
           <EnhancedTableHead
             order={order}
             orderBy={orderBy}

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import "./TimeLine.css";
-export default class TimeLine extends Component {
+import "./TimeLineManager";
+export default class TimeLineManager extends Component {
   render() {
     return (
       <div className="background__timeline">
         <div className="header__timeline">
           <header>
-            <p>ĐỀ ÁN PHÁT TRIỂN NGUỒN NHÂN LỰC NĂM 2021 - 2022</p>
+            <p>CHƯƠNG TRÌNH ĐÀO TẠO NHÂN VIÊN</p>
           </header>
         </div>
         <div className="wrapper">

@@ -472,7 +472,7 @@ export default function TableKeToan() {
 
   return (
     <div className="container__table">
-      <h3 className="edit__font">BỘ PHẬN KẾ TOÁN</h3>
+      <h3 className="edit__font">PHÒNG KẾ TOÁN NỘI BỘ</h3>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           {/* <TableHead>

@@ -27,13 +27,14 @@ td{
 .container__table h3 {
   text-align: center;
   color: rgb(247, 148, 29);
+  margin-top: 1rem;
 }
 .edit__pagination p {
   margin-top: 15px;
 }
 .change__border {
   border-bottom: none !important;
-  width: 50%;
+  width: 40%;
 }
 
 /* =================================================== o0o  ===================================================*/
@@ -54,11 +55,11 @@ td{
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  bottom: 100%;
+  top: 100%;
   left: 50%;
   margin-left: -20px;
 }
-
+/* =================================================== o0o  ===================================================*/
 .editcontent:hover .tooltiptext {
   visibility: visible;
 }
@@ -66,5 +67,8 @@ td{
   margin-top: 20px;
 }
 .change__border__left{
-  padding-left:30px !important
+  padding-left:30px !important;
+}
+.change__border__right{
+  padding-right: 30px !important;
 }

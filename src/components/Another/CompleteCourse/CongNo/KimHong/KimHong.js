@@ -39,5 +39,5 @@ CircularProgressWithLabel.propTypes = {
 
 export default function KimHong() {
   
-  return <CircularProgressWithLabel value={37} />;
+  return <CircularProgressWithLabel value={50} />;
 }

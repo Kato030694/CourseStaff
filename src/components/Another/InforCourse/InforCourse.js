@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Card, CardGroup } from "react-bootstrap";
-import Clock from "react-live-clock";
 import "./InforCourse.css";
 
 class InforCourse extends Component {
@@ -16,11 +14,11 @@ class InforCourse extends Component {
                     <img
                       className="img__card"
                       src="https://res.cloudinary.com/smarttax/image/upload/v1638260110/Icon_Course/Active/okrs_ekowif.png"
-                      alt="random image"
+                      alt=""
                     />
                   </div>
                   <div className="container_copy">
-                    <h3 className="content__card">Hoàn Thành: 98%</h3>
+                    <h3 className="content__card">NV Hoàn Thành Khóa Học: 98%</h3>
                     <h1 className="content__card_h1">OKRs</h1>
                     <p className="content__card_p">
                       Tiêu Chuẩn: Đạt 8 điểm bài kiểm tra <br />
@@ -44,7 +42,7 @@ class InforCourse extends Component {
                     />
                   </div>
                   <div className="container_copy">
-                    <h3 className="content__card">Hoàn Thành: 40%</h3>
+                    <h3 className="content__card">NV Hoàn Thành Khóa Học: 40%</h3>
                     <h1 className="content__card_h1">Customer Service</h1>
                     <p className="content__card_p">
                       Tiêu Chuẩn: Đạt 8 điểm bài kiểm tra <br />
@@ -69,7 +67,7 @@ class InforCourse extends Component {
                     />
                   </div>
                   <div className="container_copy">
-                    <h3 className="content__card">Hoàn Thành: 96%</h3>
+                    <h3 className="content__card">NV Hoàn Thành Khóa Học: 96%</h3>
                     <h1 className="content__card_h1">Productive Work</h1>
                     <p className="content__card_p">
                       Tiêu Chuẩn: Đạt 8 điểm bài kiểm tra <br />
@@ -93,7 +91,7 @@ class InforCourse extends Component {
                     />
                   </div>
                   <div className="container_copy">
-                    <h3 className="content__card">Hoàn Thành: 96%</h3>
+                    <h3 className="content__card">NV Hoàn Thành Khóa Học: 96%</h3>
                     <h1 className="content__card_h1">Report</h1>
                     <p className="content__card_p">
                       Tiêu Chuẩn: Đạt 8 điểm bài kiểm tra <br />
@@ -118,7 +116,7 @@ class InforCourse extends Component {
                     />
                   </div>
                   <div className="container_copy">
-                    <h3 className="content__card">Hoàn Thành: 100%</h3>
+                    <h3 className="content__card">NV Hoàn Thành Khóa Học: 100%</h3>
                     <h1 className="content__card_h1">5S</h1>
                     <p className="content__card_p">
                       Tiêu Chuẩn: Không đánh giá <br />
@@ -142,7 +140,7 @@ class InforCourse extends Component {
                     />
                   </div>
                   <div className="container_copy">
-                    <h3 className="content__card">Hoàn Thành: 26%</h3>
+                    <h3 className="content__card">NV Hoàn Thành Khóa Học: 26%</h3>
                     <h1 className="content__card_h1">Flow Chart</h1>
                     <p className="content__card_p">
                       Tiêu Chuẩn: Đạt 8 điểm bài kiểm tra <br />
@@ -167,7 +165,7 @@ class InforCourse extends Component {
                     />
                   </div>
                   <div className="container_copy">
-                    <h3 className="content__card">Hoàn Thành: 0%</h3>
+                    <h3 className="content__card">NV Hoàn Thành Khóa Học: 0%</h3>
                     <h1 className="content__card_h1">6 Hats</h1>
                     <p className="content__card_p">
                       Tiêu Chuẩn: Không kiểm tra <br />
@@ -191,7 +189,7 @@ class InforCourse extends Component {
                     />
                   </div>
                   <div className="container_copy">
-                    <h3 className="content__card">Hoàn Thành: 0%</h3>
+                    <h3 className="content__card">NV Hoàn Thành Khóa Học: 0%</h3>
                     <h1 className="content__card_h1">Biểu đồ xương cá</h1>
                     <p className="content__card_p">
                       Tiêu Chuẩn: Không kiểm tra <br />
@@ -216,7 +214,7 @@ class InforCourse extends Component {
                     />
                   </div>
                   <div className="container_copy">
-                    <h3 className="content__card">Hoàn Thành: 0%</h3>
+                    <h3 className="content__card">NV Hoàn Thành Khóa Học: 0%</h3>
                     <h1 className="content__card_h1">Brainstorm</h1>
                     <p className="content__card_p">
                       Tiêu Chuẩn: Không kiểm tra <br />
@@ -240,7 +238,7 @@ class InforCourse extends Component {
                     />
                   </div>
                   <div className="container_copy">
-                    <h3 className="content__card">Hoàn Thành: 0%</h3>
+                    <h3 className="content__card">NV Hoàn Thành Khóa Học: 0%</h3>
                     <h1 className="content__card_h1">5 Whys</h1>
                     <p className="content__card_p">
                       Tiêu Chuẩn: Không kiểm tra <br />
@@ -265,7 +263,7 @@ class InforCourse extends Component {
                     />
                   </div>
                   <div className="container_copy">
-                    <h3 className="content__card">Hoàn Thành: 0%</h3>
+                    <h3 className="content__card">NV Hoàn Thành Khóa Học: 0%</h3>
                     <h1 className="content__card_h1">5 Công cụ để tư duy</h1>
                     <p className="content__card_p">
                       Tiêu Chuẩn: Không kiểm tra <br />

@@ -1,0 +1,21 @@
+.edit__first{
+  
+    /* padding: 0 20px 0 20px; */
+    background: linear-gradient(#2193b0 ,#6dd5ed);
+    color: white;
+    border-radius: 20px 35px 35px 20px;
+}
+.container__marquee{
+    margin-top: 6rem;
+    width: 90%;
+    margin-left: 6%
+}
+.container__marquee span img{
+ width: 50px;
+}
+.container__marquee .range__content {
+    padding: 0 20px 0 20px;
+}
+.range__end{
+    padding: 0 80px 0 20px;
+}

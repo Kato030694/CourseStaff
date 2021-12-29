@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import './Footers.css';
-import {Navbar} from 'react-bootstrap';
-import * as Unicons from "@iconscout/react-unicons";
+// import {Navbar} from 'react-bootstrap';
+// import * as Unicons from "@iconscout/react-unicons";
 export default class Footer extends Component {
   render() {
     return (
       <div>
         <div className="footer-basic">
           <footer>
-            <div className="social">
+            {/* <div className="social">
               <a href="#">
               <Unicons.UilHome className="unicon__footer"/>
               </a>
@@ -18,10 +18,8 @@ export default class Footer extends Component {
               <a href="#">
               <Unicons.UilYoutube  className="unicon__footer"/>
               </a>
-              {/* <a href="#">
-              <Unicons.UilHome />
-              </a> */}
-            </div>
+              
+            </div> */}
             {/* <ul className="list-inline">
               <li className="list-inline-item">
                 <a href="#">Home</a>
