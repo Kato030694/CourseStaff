@@ -40,5 +40,5 @@ CircularProgressWithLabel.propTypes = {
 export default function XuanTran() {
   
 
-  return <CircularProgressWithLabel value={37} />;
+  return <CircularProgressWithLabel value={50} />;
 }

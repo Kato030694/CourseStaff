@@ -10,7 +10,7 @@ class Productiveworkd extends Component {
               alt=""
             />
             <span className="tooltiptext">
-              <span>Course: Logic Học</span>
+              <span>Course: Productive Work</span>
               <br />
       
               {/* <span>Point: 7/10</span> */}

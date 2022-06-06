@@ -11,7 +11,7 @@ export default class TimeLineNhanVien extends Component {
         </div>
         <div className="wrapper">
           <div className="center-line">
-            <a href="#" className="scroll-icon">
+            <a href className="scroll-icon">
               <i className="fas fa-caret-up" />
             </a>
           </div>
@@ -39,15 +39,7 @@ export default class TimeLineNhanVien extends Component {
                 {/* <a href="#popup1">Read more</a> */}
                 <i>Trưởng Phòng kiểm tra và đánh giá</i>
               </div>
-              <div id="popup1" className="overlay light">
-                <a className="cancel" href="#" />
-                <div className="popup">
-                  <h2>What the what?</h2>
-                  <div className="content">
-                    <p>Click outside the popup to close.</p>
-                  </div>
-                </div>
-              </div>
+
             </section>
           </div>
           <div className="row row-2">

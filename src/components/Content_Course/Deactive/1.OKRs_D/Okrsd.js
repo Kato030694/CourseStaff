@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Customerserviced extends Component {
+class OKRsd extends Component {
     render() {
         return (
             <div className="editcontent">
@@ -23,4 +23,4 @@ class Customerserviced extends Component {
     }
 }
 
-export default Customerserviced;
+export default OKRsd;

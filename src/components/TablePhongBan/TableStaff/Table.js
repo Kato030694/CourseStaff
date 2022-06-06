@@ -85,8 +85,26 @@ import Productivework from "../../Content_Course/Active/3.ProductiveWork/Product
 import Report from "../../Content_Course/Active/4.Report/Report";
 import Fivescoures from "../../Content_Course/Active/5.5S/Fivescoures";
 import Logichoc from "../../Content_Course/Active/11.Logic_Hoc/Logichoc";
-
-
+import Teamwork from "../../Content_Course/Active/17.TeamWork/Teamwork";
+import Customerserviced from "../../Content_Course/Deactive/2.Customer_Service_D/Customerserviced";
+import Flowchartd from "../../Content_Course/Deactive/6.FlowChart_D/Flowchartd";
+import Sixhatsd from "../../Content_Course/Deactive/7.6Hats_D/Sixhatsd";
+import Pointdemingd from "../../Content_Course/Deactive/8.14Point_Deming_D/Pointdemingd";
+import Brainstormd from "../../Content_Course/Deactive/9.BrainStorm_D/Brainstormd";
+import Logicd from "../../Content_Course/Deactive/11.Logic_Hoc_D/Logicd";
+import Fivewhysd from "../../Content_Course/Deactive/10.5Whys_D/Fivewhysd";
+import Kanband from "../../Content_Course/Deactive/12.KanBan_D/Kanband";
+import Chotsalesd from "../../Content_Course/Deactive/13.ChotSales_D/Chotsalesd";
+import Tamlyhocd from "../../Content_Course/Deactive/14.TamLyHocThuyetPhuc_D/Tamlyhocd";
+import Flowchart from "../../Content_Course/Active/6.FlowChart/Flowchart";
+import Pointdeming from "../../Content_Course/Active/8.14Point_Deming/Pointdeming";
+import Tamly from "../../Content_Course/Active/14.TamLyHocThuyetPhuc/Tamly";
+import Dongluclamviec from "../../Content_Course/Active/15.TaoDongLucLamViec/Dongluclamviec";
+// import Chiakhoalanhdaod from "../../Content_Course/Deactive/16.ChiaKhoaLanhDao_D/Chiakhoalanhdaod";
+import Chiakhoalanhdao from "../../Content_Course/Active/16.ChiaKhoaLanhDao/Chiakhoalanhdao";
+import Productiveworkd from "../../Content_Course/Deactive/3.ProductiveWork_D/Productiveworkd";
+import Reportd from "../../Content_Course/Deactive/4.Report_D/Reportd";
+import OKRsd from "../../Content_Course/Deactive/1.OKRs_D/Okrsd";
 
 // Deactive
 function createData(
@@ -163,22 +181,22 @@ const rows = [
     // ========================================= Danh Sách Khóa Học =========================================
     // ========================================= Active =========================================
     <div className="editcontent">
-      <OKRs/>
+      <OKRs />
     </div>,
     <div className="editcontent">
-      <Customerservice/>
+      <Customerservice />
     </div>,
     <div className="editcontent">
-      <Productivework/>
+      <Productivework />
     </div>,
     <div className="editcontent">
-     <Report/>
+      <Report />
     </div>,
     <div className="editcontent">
-      <Fivescoures/>
+      <Fivescoures />
     </div>,
     <div className="editcontent">
-      <Logichoc/>
+      <Logichoc />
     </div>,
     <div className="editcontent">
       <img
@@ -1662,155 +1680,58 @@ const rows = [
     "Kinh Doanh",
     // ========================================= Course =========================================
     // ========================================= Active =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="OKRs"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" /> */}
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Productive Work"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Report"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5S"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png"
-        alt=""
-      />
-    </a>,
-    <div>
+    <div className="editcontent">
+      <OKRs />
     </div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent">
+      <Productivework />
+    </div>,
+    <div className="editcontent">
+      <Report />
+    </div>,
+    <div className="editcontent">
+      <Fivescoures />
+    </div>,
+    <div className="editcontent">
+      <Teamwork />
+    </div>,
+    <div className="editcontent">
+      <Customerserviced />
+    </div>,
+    <div className="editcontent">
+      <Flowchartd />
+    </div>,
+    <div className="editcontent">
+      <Sixhatsd />
+    </div>,
+    <div className="editcontent">
+      <Pointdemingd />
+    </div>,
+    <div className="editcontent">
+      <Brainstormd />
+    </div>,
+    <div className="editcontent">
+      <Fivewhysd />
+    </div>,
+    <div className="editcontent">
+      <Logicd />
+    </div>,
+    <div className="editcontent">
+      <Kanband />
+    </div>,
+    <div className="editcontent">
+      <Chotsalesd />
+    </div>,
+    <div className="editcontent">
+      <Tamlyhocd />
+    </div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     // ========================================= Deactive =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848537/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-01_pn4bpl.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Flow Chart"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-07_jsb4gi.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="6 Hats"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="14 Deming"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="BrainStorm"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5 Whys"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Logic"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Chốt Sales"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-16_zosezr.png"
-        alt=""
-      />
-    </a>,
+
+    <div></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -1835,151 +1756,62 @@ const rows = [
     "Kinh Doanh",
     //  ========================================= Course =========================================
     // ========================================= Active =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="OKRs"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Productive Work"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Report"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5S"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Flow Chart"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent">
+      <OKRs />
+    </div>,
+    <div className="editcontent">
+      <Customerservice />
+    </div>,
+    <div className="editcontent">
+      <Productivework />
+    </div>,
+    <div className="editcontent">
+      <Report />
+    </div>,
+    <div className="editcontent">
+      <Fivescoures />
+    </div>,
+    <div className="editcontent">
+      <Flowchart />
+    </div>,
+    <div className="editcontent">
+      <Teamwork />
+    </div>,
+    <div className="editcontent">
+      <Sixhatsd />
+    </div>,
+    <div className="editcontent">
+      <Pointdemingd />
+    </div>,
+    <div className="editcontent">
+      <Brainstormd />
+    </div>,
+    <div className="editcontent">
+      <Fivewhysd />
+    </div>,
+    <div className="editcontent">
+      <Logicd />
+    </div>,
+    <div className="editcontent">
+      <Kanband />
+    </div>,
+    <div className="editcontent">
+      <Chotsalesd />
+    </div>,
+    <div className="editcontent">
+      <Tamlyhocd />
+    </div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     // ========================================= Deactive =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="6 Hats"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="14 Deming"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="BrainStorm"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5 Whys"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Logic"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Chốt Sales"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-16_zosezr.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+
     // ========================================= ENDCOURSE =========================================
     <p>
       <KaLi />
@@ -2000,141 +1832,62 @@ const rows = [
     "Kinh Doanh",
     // ========================================= Course =========================================
     // ========================================= Active =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="OKRs"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Productive Work"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Report"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5S"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Flow Chart"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
+    <div className="editcontent">
+      <OKRs />
+    </div>,
+    <div className="editcontent">
+      <Customerservice />
+    </div>,
+    <div className="editcontent">
+      <Productivework />
+    </div>,
+    <div className="editcontent">
+      <Report />
+    </div>,
+    <div className="editcontent">
+      <Fivescoures />
+    </div>,
+    <div className="editcontent">
+      <Flowchart />
+    </div>,
+    <div className="editcontent">
+      <Pointdeming />
+    </div>,
+    <div className="editcontent">
+      <Teamwork />
+    </div>,
+    <div className="editcontent">
+      <Sixhatsd />
+    </div>,
+    <div className="editcontent">
+      <Brainstormd />
+    </div>,
+    <div className="editcontent">
+      <Fivewhysd />
+    </div>,
+    <div className="editcontent">
+      <Logicd />
+    </div>,
+    <div className="editcontent">
+      <Kanband />
+    </div>,
+    <div className="editcontent">
+      <Chotsalesd />
+    </div>,
+    <div className="editcontent">
+      <Tamlyhocd />
+    </div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     <div></div>,
     <div></div>,
     <div></div>,
     <div></div>,
     <div></div>,
     // ========================================= Deactive =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="6 Hats"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="14 Deming"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="BrainStorm"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5 Whys"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Logic"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+
     // ========================================= ENDCOURSE =========================================
     <p>
       <HuongQuynh />
@@ -2155,158 +1908,43 @@ const rows = [
     "Kinh Doanh",
     // ========================================= COURSE =========================================
     // ========================================= ACTIVE =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="OKRs"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" /> */}
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Productive Work"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Report"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5S"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Flow Chart"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent">
+      <OKRs />
+    </div>,
+    <div className="editcontent">
+      <Productivework />
+    </div>,
+    <div className="editcontent">
+      <Report />
+    </div>,
+    <div className="editcontent">
+      <Fivescoures />
+    </div>,
+    <div className="editcontent">
+      <Flowchart />
+    </div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced/></div>,
+    <div className="editcontent"><Sixhatsd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Brainstormd/></div>,
+    <div className="editcontent"><Fivewhysd/></div>,
+    <div className="editcontent"><Logicd/></div>,
+    <div className="editcontent"><Kanband/></div>,
+    <div className="editcontent"><Chotsalesd/></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     // ========================================= DEACTIVE =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848537/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-01_pn4bpl.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="6 Hats"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="14 Deming"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="BrainStorm"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5 Whys"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Logic"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Chốt Sales"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-16_zosezr.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
+    
     <p>
       <NgocGiau />
     </p>,
@@ -2326,165 +1964,34 @@ const rows = [
     "Kinh Doanh",
     //  ========================================= Course =========================================
     // ========================================= Active =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="OKRs"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" /> */}
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Productive Work"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Report"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5S"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Flow Chart"
-    >
-      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png" /> */}
-    </a>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework/></div>,
+    <div className="editcontent"><Report/></div>,
+    <div className="editcontent"><Fivescoures/></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Customerserviced/></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Pointdemingd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Chotsalesd /></div>,
+    <div className="editcontent"><Tamlyhocd /></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    
     <div></div>,
     <div></div>,
     <div></div>,
-    <div></div>,
-    <div></div>,
+    
     <div></div>,
     // ========================================= Deactive =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848537/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-01_pn4bpl.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Flow Chart"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-07_jsb4gi.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="6 Hats"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="14 Deming"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="BrainStorm"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5 Whys"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Logic"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Chốt Sales"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-16_zosezr.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
     // ========================================= END COURSE =========================================
     <p>
       <NhuThao />
@@ -2505,155 +2012,34 @@ const rows = [
     "Kinh Doanh",
     // ========================================= COURSE =========================================
     // ========================================= ACTIVE =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="OKRs"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Productive Work"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Report"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5S"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Flow Chart"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    // ========================================= DEACTIVE =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="6 Hats"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="14 Deming"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="BrainStorm"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5 Whys"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Logic"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Chốt Sales"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-16_zosezr.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Flowchart/></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Sixhatsd/></div>,
+    <div className="editcontent"><Pointdemingd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Chotsalesd /></div>,
+    <div className="editcontent"><Tamlyhocd /></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     // ========================================= END COURSE =========================================
     <p>
       <KhanhLinh />
-      target="_blank" rel="noopener noreferrer"
     </p>,
     <a
       href="https://company.esmart.vn/profile/"
@@ -2671,148 +2057,33 @@ const rows = [
     "Kinh Doanh",
     // ========================================= COURSE =========================================
     // ========================================= ACTIVE =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="OKRs"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" /> */}
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Productive Work"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Report"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5S"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Flow Chart"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Flowchart /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Pointdemingd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Chotsalesd /></div>,
+    <div className="editcontent"><Tamlyhocd /></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     <div></div>,
     <div></div>,
     <div></div>,
     // ========================================= DEACTIVE =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848537/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-01_pn4bpl.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="6 Hats"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="14 Deming"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="BrainStorm"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5 Whys"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Logic"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
     // ========================================= END COURSE =========================================
     <p>
       <NhatVy />
@@ -2828,147 +2099,31 @@ const rows = [
   // ========================================= HUỲNH LONG ẨN =========================================
   createData(
     14,
-
     "Huỳnh Long Ẩn",
     "Kinh Doanh",
     // ========================================= COURSE =========================================
     // ========================================= ACTIVE =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="OKRs"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-04_oswqzq.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      {/* <img src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-01_rcjdir.png" /> */}
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Productive Work"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-06_gg8qjn.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Report"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-08_xlqtdw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5S"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-05_jto47a.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Flow Chart"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848525/Icon_Course/Blue/Blue-icon_kh%C3%B3a_h%E1%BB%8Dc-07_swpei4.png"
-        alt=""
-      />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Flowchart /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Pointdemingd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     // ========================================= DEACTIVE =========================================
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Customer Service"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848537/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-01_pn4bpl.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="6 Hats"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-12_iigsxt.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="14 Deming"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848538/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-02_y6nxg5.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="BrainStorm"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-17_zatdzw.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="5 Whys"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-14_k9bbty.png"
-        alt=""
-      />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Logic"
-    >
-      <img
-        src="https://res.cloudinary.com/smarttax/image/upload/v1638848539/Icon_Course/Red/red-icon_kh%C3%B3a_h%E1%BB%8Dc-13_nrh8ro.png"
-        alt=""
-      />
-    </a>,
+    
+    <div></div>,
+    <div></div>,
+    <div></div>,
+    <div></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -2990,45 +2145,25 @@ const rows = [
   // ========================================= TẠ HỒNG ÂN =========================================
   createData(
     15,
-    <img className="edit__image" src="" alt="" />,
+   
     "Tạ Hồng Ân",
     "Tổng Hợp",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report/></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Tamly/></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd/></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3041,55 +2176,35 @@ const rows = [
     <p>
       <HongAn />
     </p>,
-    <a
-      href="https://company.esmart.vn/profile/"
-      target="_blank"
-      rel="noopener noreferrer"
-      arget="_blank"
-    >
-      <Unicons.UilUser size="40" color="#f7941d" />
-    </a>
+     <a
+     href="https://company.esmart.vn/profile/"
+     target="_blank"
+     rel="noopener noreferrer"
+     arget="_blank"
+   >
+     <Unicons.UilUser size="40" color="#f7941d" />
+   </a>,
+    
   ),
   createData(
     16,
-    <img className="edit__image" src="" alt="" />,
     "Nguyễn Ngân Trúc",
     "Tổng Hợp",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd /></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Pointdemingd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3113,44 +2228,22 @@ const rows = [
   ),
   createData(
     17,
-    <img className="edit__image" src="" alt="" />,
     "Ngô Thùy Trang",
     "Tổng Hợp",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd /></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Pointdemingd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3174,48 +2267,27 @@ const rows = [
   ),
   createData(
     18,
-    <img className="edit__image" src="" alt="" />,
     "Ngô Thị Thùy Tiên",
     "Tổng Hợp",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report/></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Pointdeming/></div>,
+    <div className="editcontent"><Logichoc/></div>,
+    <div className="editcontent"><Tamly/></div>,
+    <div className="editcontent"><Dongluclamviec/></div>,
+    <div className="editcontent"><Chiakhoalanhdao/></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Sixhatsd/></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd/></div>,
+    <div className="editcontent"><Kanband/></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3235,50 +2307,30 @@ const rows = [
   ),
   createData(
     19,
-    <img className="edit__image" src="" alt="" />,
+    
     "Võ Thị Xuân Diệu",
     "Tổng Hợp",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Pointdeming /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd /></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3296,46 +2348,25 @@ const rows = [
   ),
   createData(
     20,
-    <img className="edit__image" src="" alt="" />,
+    
     "Phan Thị Thu Thảo",
     "Tổng Hợp",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Flowchart/></div>,
+    <div className="editcontent"><Pointdeming/></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Sixhatsd/></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd /></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3357,50 +2388,29 @@ const rows = [
   ),
   createData(
     21,
-    <img className="edit__image" src="" alt="" />,
     "Huỳnh Hữu Ngân",
     "Tổng Hợp",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Pointdeming /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Flowchartd /></div>,
+    <div className="editcontent"><Sixhatsd/></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd /></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3418,45 +2428,23 @@ const rows = [
   ),
   createData(
     22,
-    <img className="edit__image" src="" alt="" />,
     "Văn Thị Kim Phụng",
     "Tổng Hợp",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Flowchart /></div>,
+    <div className="editcontent"><Pointdeming /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
+    <div className="editcontent"></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3479,44 +2467,23 @@ const rows = [
   ),
   createData(
     23,
-    <img className="edit__image" src="" alt="" />,
+   
     "Lê Giang Cẩm",
     "Tổng Hợp",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Pointdeming /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3540,54 +2507,32 @@ const rows = [
   ),
   createData(
     24,
-    <img className="edit__image" src="" alt="" />,
     "Phạm Lê Huyền Trang",
     "Tổng Hợp",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     <p>
       <HuyenTrang />
     </p>,
@@ -3601,44 +2546,22 @@ const rows = [
   ),
   createData(
     25,
-    <img className="edit__image" src="" alt="" />,
     "Nguyễn Tuấn Phong",
     "Tổng Hợp",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3662,46 +2585,26 @@ const rows = [
   ),
   createData(
     26,
-    <img className="edit__image" src="" alt="" />,
+     
     "Lý Mạnh Luông",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Flowchart/></div>,
+    <div className="editcontent"><Pointdeming/></div>,
+    <div className="editcontent"><Logichoc/></div>,
+    <div className="editcontent"><Tamly/></div>,
+    <div className="editcontent"><Dongluclamviec/></div>,
+    <div className="editcontent"><Chiakhoalanhdao/></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Sixhatsd/></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Kanband /></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3723,44 +2626,23 @@ const rows = [
   ),
   createData(
     27,
-    <img className="edit__image" src="" alt="" />,
+     
     "Trần Thị Xuân",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Flowchart/></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Pointdemingd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3784,47 +2666,26 @@ const rows = [
   ),
   createData(
     28,
-    <img className="edit__image" src="" alt="" />,
+     
     "Nguyễn Thị Thùy Linh",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Productiveworkd /></div>,
+    <div className="editcontent"><Reportd /></div>,
+    <div className="editcontent"><Flowchartd /></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Pointdemingd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3845,44 +2706,23 @@ const rows = [
   ),
   createData(
     29,
-    <img className="edit__image" src="" alt="" />,
+     
     "Nguyễn Nguyên Thùy",
     "Kinh Doanh",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3906,46 +2746,25 @@ const rows = [
   ),
   createData(
     30,
-    <img className="edit__image" src="" alt="" />,
+     
     "Bùi Thị Hồng Vân",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Pointdeming /></div>,
+    <div className="editcontent"><Tamly /></div>,
+    <div className="editcontent"><Dongluclamviec /></div>,
+    <div className="editcontent"><Chiakhoalanhdao /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd /></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -3967,46 +2786,25 @@ const rows = [
   ),
   createData(
     31,
-    <img className="edit__image" src="" alt="" />,
+     
     "Tạ Thị Yến",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Tamly /></div>,
+    <div className="editcontent"><Dongluclamviec /></div>,
+    <div className="editcontent"><Chiakhoalanhdao /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4028,46 +2826,25 @@ const rows = [
   ),
   createData(
     32,
-    <img className="edit__image" src="" alt="" />,
+     
     "Nguyễn Khoa Diệu Thúy",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Pointdeming /></div>,
+    <div className="editcontent"><Logichoc /></div>,
+    <div className="editcontent"><Tamly /></div>,
+    <div className="editcontent"><Dongluclamviec /></div>,
+    <div className="editcontent"><Chiakhoalanhdao /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Kanband /></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4089,46 +2866,25 @@ const rows = [
   ),
   createData(
     33,
-    <img className="edit__image" src="" alt="" />,
+     
     "Nguyễn Thị Cẩm Thu",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Logichoc /></div>,
+    <div className="editcontent"><Tamly /></div>,
+    <div className="editcontent"><Dongluclamviec /></div>,
+    <div className="editcontent"><Chiakhoalanhdao /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Kanband /></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4150,44 +2906,23 @@ const rows = [
   ),
   createData(
     34,
-    <img className="edit__image" src="" alt="" />,
+     
     "Trần Nguyễn Khánh Ngân",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Logichoc /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd /></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4211,45 +2946,25 @@ const rows = [
   ),
   createData(
     35,
-    <img className="edit__image" src="" alt="" />,
+     
     "Nguyễn Thị Thùy Trang",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Pointdeming /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd /></div>,
+    // <div></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4272,46 +2987,25 @@ const rows = [
   ),
   createData(
     36,
-    <img className="edit__image" src="" alt="" />,
+     
     "Bùi Trang Duy Bảo",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Logichoc /></div>,
+    <div className="editcontent"><Tamly /></div>,
+    <div className="editcontent"><Dongluclamviec /></div>,
+    <div className="editcontent"><Chiakhoalanhdao /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd /></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Pointdemingd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Kanband /></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4333,46 +3027,25 @@ const rows = [
   ),
   createData(
     37,
-    <img className="edit__image" src="" alt="" />,
+     
     "Trần Thị Kim Thoa",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Customerservice/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Pointdeming /></div>,
+    <div className="editcontent"><Logichoc /></div>,
+    <div className="editcontent"><Tamly /></div>,
+    <div className="editcontent"><Dongluclamviec /></div>,
+    <div className="editcontent"><Chiakhoalanhdao /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Kanband /></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4394,44 +3067,23 @@ const rows = [
   ),
   createData(
     38,
-    <img className="edit__image" src="" alt="" />,
+     
     "Nguyễn Thị Tuyết Trinh",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4455,44 +3107,23 @@ const rows = [
   ),
   createData(
     39,
-    <img className="edit__image" src="" alt="" />,
+     
     "Phan Thị Thúy",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Logichoc /></div>,
+    <div className="editcontent"><Teamwork /></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd /></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4516,44 +3147,23 @@ const rows = [
   ),
   createData(
     40,
-    <img className="edit__image" src="" alt="" />,
+     
     "Phan Thị Minh Thư",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4577,44 +3187,23 @@ const rows = [
   ),
   createData(
     41,
-    <img className="edit__image" src="" alt="" />,
+     
     "Lê Thị Huỳnh Như",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4638,44 +3227,23 @@ const rows = [
   ),
   createData(
     42,
-    <img className="edit__image" src="" alt="" />,
+     
     "Phạm Thị Huỳnh Như",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4699,44 +3267,23 @@ const rows = [
   ),
   createData(
     43,
-    <img className="edit__image" src="" alt="" />,
+     
     "Nguyễn Phương Ly",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4760,44 +3307,23 @@ const rows = [
   ),
   createData(
     44,
-    <img className="edit__image" src="" alt="" />,
+     
     "Đặng Thùy Mỹ Linh",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4821,44 +3347,23 @@ const rows = [
   ),
   createData(
     45,
-    <img className="edit__image" src="" alt="" />,
+     
     "Hồ Thị Kim Lúc",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4882,44 +3387,23 @@ const rows = [
   ),
   createData(
     46,
-    <img className="edit__image" src="" alt="" />,
+     
     "Du Thế Hồng",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -4943,44 +3427,23 @@ const rows = [
   ),
   createData(
     47,
-    <img className="edit__image" src="" alt="" />,
+     
     "Nguyễn Thanh Tùng",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -5004,44 +3467,23 @@ const rows = [
   ),
   createData(
     48,
-    <img className="edit__image" src="" alt="" />,
+     
     "Nguyễn Thị Hồng Nhi",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -5065,44 +3507,23 @@ const rows = [
   ),
   createData(
     49,
-    <img className="edit__image" src="" alt="" />,
+     
     "Nguyễn Thị Minh Ngọc",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><OKRs/></div>,
+    <div className="editcontent"><Productivework /></div>,
+    <div className="editcontent"><Report /></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><Customerserviced /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
     <div></div>,
     <div></div>,
     <div></div>,
@@ -5126,54 +3547,33 @@ const rows = [
   ),
   createData(
     50,
-    <img className="edit__image" src="" alt="" />,
+     
     "Nguyễn Xuân Khánh Vy",
     "Kế Toán Dịch Vụ",
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil12Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.Uil3Plus size="40" color="#f7941d" />
-    </a>,
-    <a
-      href="http://esmart.vn"
-      target="_blank"
-      rel="noopener noreferrer"
-      title="Luyện Lý Trí"
-    >
-      <Unicons.UilBrain size="40" color="#f7941d" />
-    </a>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
-    <div></div>,
+    <div className="editcontent"><Fivescoures /></div>,
+    <div className="editcontent"><Teamwork/></div>,
+    <div className="editcontent"><OKRsd/></div>,
+    <div className="editcontent"><Customerserviced/></div>,
+    <div className="editcontent"><Productiveworkd/></div>,
+    <div className="editcontent"><Reportd /></div>,
+    <div className="editcontent"><Flowchartd/></div>,
+    <div className="editcontent"><Pointdemingd/></div>,
+    <div className="editcontent"><Sixhatsd /></div>,
+    <div className="editcontent"><Brainstormd /></div>,
+    <div className="editcontent"><Fivewhysd /></div>,
+    <div className="editcontent"><Logicd /></div>,
+    <div className="editcontent"><Kanband /></div>,
+    <div className="editcontent"><Tamlyhocd/></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
+    <div className="editcontent"></div>,
     <p>
       <KhanhVy />
     </p>,

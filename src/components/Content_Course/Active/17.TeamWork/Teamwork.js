@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class LogicHoc extends Component {
+class Teamwork extends Component {
     render() {
         return (
             <div className="editcontent">
@@ -23,4 +23,4 @@ class LogicHoc extends Component {
     }
 }
 
-export default LogicHoc;
+export default Teamwork;

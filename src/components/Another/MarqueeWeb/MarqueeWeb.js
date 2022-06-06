@@ -10,7 +10,7 @@ class MarqueeWeb extends Component {
           <span className="edit__first range__content">
             <UilUser /> 50 Nhân Viên
           </span>
-          <span className="range__content">Course: 16</span>
+          <span className="range__content">Course: 17</span>
           <span className="range__content">Danh Sách Khóa Học (Hoàn Thành) :</span>
           <span className="range__content">
             <img

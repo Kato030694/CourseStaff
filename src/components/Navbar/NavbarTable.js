@@ -85,15 +85,15 @@ class NavbarTable extends Component {
                   <NavDropdown title="TimeLine" id="collasible-nav-dropdown">
                     <NavDropdown.Item
                       as={Link}
-                      to={"/tabletonghop"}
-                      href="/tabletonghop"
+                      to={"/timelinemanager"}
+                      href="/timelinemanager"
                     >
                       Manager
                     </NavDropdown.Item>
                     <NavDropdown.Item
                       as={Link}
-                      to={"/tableketoannoibo"}
-                      href="/tableketoannoibo"
+                      to={"/timelinesupervisor"}
+                      href="/timelinesupervisor"
                     >
                       Supervisor
                     </NavDropdown.Item>
